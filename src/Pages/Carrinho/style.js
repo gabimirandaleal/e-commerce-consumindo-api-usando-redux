@@ -28,6 +28,29 @@ export const Container = styled.div`
 
 `;
 
+export const ContainerE = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const CarrinhoFinalizar = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    margin-top: 40px;
+    & > div{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 2px 0px 2px;
+        border-top: 1px solid grey;
+    }
+
+`;
+
 export const HeaderCard = styled.div`
     display: flex;
     flex-direction: column;
