@@ -31,7 +31,7 @@ function Carrinho(){
                                     <HeaderCard>
                                         <img  src={item.image} alt={item.title}/>
                                         <h3>{item.title}</h3>
-                                        <span>{`R$ ${(item.price).toString().replace(".", ",")}`}</span>
+                                        <span>{`R$ ${(item.price).toFixed(2).toString().replace(".", ",")}`}</span>
                                     </HeaderCard>
                                     <Button onclick={() => removeCart(item.id)} text={"Remover Carrinho"} color="true"></Button>
                                 </CardProduct>
