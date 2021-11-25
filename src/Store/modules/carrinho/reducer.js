@@ -6,7 +6,7 @@ const defaultState = JSON.parse(localStorage.getItem("cart")) || [];
 const carrinhoReducer = (state = defaultState, action)=>{
     const {product} = action
     switch (action.type) {
-        case ADD_CARRINHO:
+        case ADD_CARRINHO:   
             return [...state, product]
         case REMOVE_CARRINHO:
             return state.filter((item) => item !== product.id)
